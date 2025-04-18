@@ -72,10 +72,6 @@ main {
   gap: var(--space-300);
 }
 
-.blog-preview-card:hover {
-  cursor: pointer;
-}
-
 .blog-preview-card img {
   border-radius: 10px;
 }
@@ -96,6 +92,14 @@ main {
 }
 
 .title {
+  cursor: pointer;
+  color: var(--color-gray-950);
+  text-decoration: none;
+  outline: transparent;
+}
+
+.title:hover,
+.title:focus {
   color: var(--color-yellow);
 }
 
@@ -107,6 +111,10 @@ main {
     display: flex;
     align-items: center;
     gap: var(--space-150);
+}
+
+.author .name {
+  color: var(--color-gray-950);
 }
 
 .author img {
